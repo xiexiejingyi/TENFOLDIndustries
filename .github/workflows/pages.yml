@@ -1,4 +1,4 @@
-name: Deploy GitHub Pages
+name: Enable GitHub Pages
 
 on:
   push:
@@ -8,23 +8,29 @@ on:
 permissions:
   contents: read
   pages: write
-  id-token: write
-
-concurrency:
-  group: pages
-  cancel-in-progress: false
 
 jobs:
-  deploy:
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
+  enable:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/configure-pages@v5
-      - uses: actions/upload-pages-artifact@v3
+      - name: Enable Pages from main
+        uses: actions/github-script@v7
         with:
-          path: .
-      - id: deployment
-        uses: actions/deploy-pages@v4
+          script: |
+            const payload = {
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              build_type: "legacy",
+              source: { branch: "main", path: "/" },
+            };
+            try {
+              await github.rest.repos.createPagesSite(payload);
+              core.info("GitHub Pages enabled from branch main.");
+            } catch (error) {
+              if (error.status === 409 || error.status === 422) {
+                await github.rest.repos.updateInformationAboutPagesSite(payload);
+                core.info("GitHub Pages already present; source set to main.");
+              } else {
+                throw error;
+              }
+            }
