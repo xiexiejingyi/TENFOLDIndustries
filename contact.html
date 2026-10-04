@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact — Tenfold Industries</title>
+  <meta name="description" content="Atelier inquiry: book a private consultation or request a material swatch kit." />
+  <meta property="og:title" content="Contact — Tenfold Industries" />
+  <meta property="og:description" content="Atelier inquiry: book a private consultation or request a material swatch kit." />
+  <meta property="og:image" content="assets/img/material_kaki-lg.jpg" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%232a2c2d'/%3E%3Cpath d='M8 9h16v3h-6.5v11h-3V12H8z' fill='%23f3eee5'/%3E%3C/svg%3E" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body data-page="contact">
+
+  <!-- ===================== STICKY TOP NAVIGATION ===================== -->
+  <header class="nav" id="nav">
+    <a class="nav__brand" href="index.html" aria-label="Tenfold Industries — home">TENFOLD</a>
+    <nav class="nav__links" aria-label="Primary">
+      <a href="index.html" data-page="home"><span>01</span>Home</a>
+      <a href="projects.html" data-page="projects"><span>02</span>Projects</a>
+      <a href="inspiration.html" data-page="inspiration"><span>03</span>Inspiration</a>
+      <a href="contact.html" data-page="contact" aria-current="page"><span>04</span>Contact</a>
+    </nav>
+    <button class="nav__cta" type="button" data-open-lightbox>Contact us</button>
+    <button class="nav__burger" type="button" aria-label="Open menu" aria-expanded="false" data-menu-toggle>
+      <i></i><i></i>
+    </button>
+  </header>
+
+  <!-- Mobile menu -->
+  <div class="menu" id="menu" aria-hidden="true">
+    <a href="index.html" data-page="home"><span>01</span>Cinematic Entry</a>
+    <a href="projects.html" data-page="projects"><span>02</span>Spatial Case Studies</a>
+    <a href="inspiration.html" data-page="inspiration"><span>03</span>The Tactile Archive</a>
+    <a href="contact.html" data-page="contact"><span>04</span>Atelier Inquiry</a>
+    <button type="button" class="menu__cta" data-open-lightbox data-menu-close>Contact us</button>
+  </div>
+
+  <main id="top">
+
+    <!-- ===================== 04. ATELIER INQUIRY / FOOTER ===================== -->
+    <section class="inquiry" id="inquiry" data-theme="light" aria-label="Atelier inquiry">
+      <div class="wrap">
+        <header class="section-head reveal">
+          <p class="index">[ 04. Atelier Inquiry ]</p>
+          <h2 class="display">Begin <em>the conversation.</em></h2>
+        </header>
+
+        <div class="inquiry__grid">
+          <!-- Private consultation -->
+          <form class="form reveal" id="form-consult" novalidate>
+            <h3>Private consultation</h3>
+            <p class="form__lead">A 45-minute session with our design team, in person at the atelier or over a call. Bring a brand book, a moodboard, or simply an idea.</p>
+            <div class="field"><label for="c-name">Name</label><input id="c-name" name="name" type="text" autocomplete="name" required /></div>
+            <div class="field"><label for="c-company">Brand / property</label><input id="c-company" name="company" type="text" autocomplete="organization" /></div>
+            <div class="field"><label for="c-email">Email</label><input id="c-email" name="email" type="email" autocomplete="email" required /></div>
+            <div class="field field--row">
+              <div><label for="c-type">Space</label>
+                <select id="c-type" name="space">
+                  <option>Hotel &amp; resort</option><option>Restaurant &amp; bar</option><option>Corporate</option><option>Retail</option><option>Other</option>
+                </select></div>
+              <div><label for="c-date">Preferred week</label><input id="c-date" name="date" type="week" /></div>
+            </div>
+            <div class="field"><label for="c-msg">Tell us about the project</label><textarea id="c-msg" name="message" rows="3"></textarea></div>
+            <button type="submit" class="btn btn--solid">Request consultation</button>
+            <p class="form__ok" role="status" aria-live="polite"></p>
+          </form>
+
+          <!-- Swatch kit -->
+          <form class="form form--kit reveal" id="form-kit" novalidate>
+            <figure class="form__img"><img src="assets/img/material_kaki-md.jpg" alt="Khaki cotton drill swatch" loading="lazy" /></figure>
+            <h3>Material swatch kit</h3>
+            <p class="form__lead">A curated box of our core textiles, trims and hardware. Complimentary for hospitality and corporate teams.</p>
+            <div class="field"><label for="k-name">Name</label><input id="k-name" name="name" type="text" autocomplete="name" required /></div>
+            <div class="field"><label for="k-email">Email</label><input id="k-email" name="email" type="email" autocomplete="email" required /></div>
+            <div class="field"><label for="k-address">Delivery address</label><textarea id="k-address" name="address" rows="2" autocomplete="street-address" required></textarea></div>
+            <fieldset class="chips">
+              <legend>Interests</legend>
+              <label><input type="checkbox" name="interest" value="wool" /><span>Wool &amp; flannel</span></label>
+              <label><input type="checkbox" name="interest" value="cotton" /><span>Cotton &amp; canvas</span></label>
+              <label><input type="checkbox" name="interest" value="linen" /><span>Linen &amp; voile</span></label>
+              <label><input type="checkbox" name="interest" value="hardware" /><span>Hardware &amp; trims</span></label>
+            </fieldset>
+            <button type="submit" class="btn btn--line">Request swatch kit</button>
+            <p class="form__ok" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+    <footer class="footer" data-theme="light">
+      <div class="wrap footer__top">
+        <div>
+          <p class="eyebrow">Atelier</p>
+          <address>Tenfold Industries<br />Singapore</address>
+        </div>
+        <div>
+          <p class="eyebrow">Enquiries</p>
+          <a href="mailto:hello@tenfold.industries">hello@tenfold.industries</a>
+        </div>
+        <div>
+          <p class="eyebrow">Follow</p>
+          <a href="https://www.instagram.com/" target="_blank" rel="noopener">Instagram</a><br />
+          <a href="https://www.linkedin.com/" target="_blank" rel="noopener">LinkedIn</a>
+        </div>
+        <div>
+          <p class="eyebrow">Index</p>
+          <a href="index.html">01 Home</a><br /><a href="projects.html">02 Projects</a><br /><a href="inspiration.html">03 Inspiration</a><br /><a href="contact.html">04 Contact</a>
+        </div>
+      </div>
+      <div class="footer__mark" aria-hidden="true">TENFOLD</div>
+      <div class="wrap footer__bottom">
+        <span>© <span class="year"></span> Tenfold Industries. Workwear, reimagined.</span>
+        <span><a href="#">Privacy</a> · <a href="#">Terms</a></span>
+      </div>
+    </footer>
+
+  <!-- ===================== STICKY BOTTOM DOCK (secondary navigation) ===================== -->
+  <nav class="dock" id="dock" aria-label="Page index">
+    <a href="index.html" data-page="home"><b>01</b><span>Home</span></a>
+    <a href="projects.html" data-page="projects"><b>02</b><span>Projects</span></a>
+    <a href="inspiration.html" data-page="inspiration"><b>03</b><span>Inspiration</span></a>
+    <a href="contact.html" data-page="contact"><b>04</b><span>Contact</span></a>
+  </nav>
+
+  <!-- ===================== CONTACT LIGHTBOX ===================== -->
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-labelledby="lb-title" aria-hidden="true">
+    <div class="lightbox__backdrop" data-close-lightbox></div>
+    <div class="lightbox__panel">
+      <button type="button" class="lightbox__close" aria-label="Close" data-close-lightbox>×</button>
+      <figure class="lightbox__img"><img src="assets/img/blankcanvas-md.jpg" alt="" /></figure>
+      <form class="form" id="form-contact" novalidate>
+        <p class="eyebrow">Contact us</p>
+        <h3 id="lb-title">Tell us about <em>your people.</em></h3>
+        <div class="field"><label for="l-name">Name</label><input id="l-name" name="name" type="text" required /></div>
+        <div class="field"><label for="l-email">Email</label><input id="l-email" name="email" type="email" required /></div>
+        <div class="field"><label for="l-msg">Message</label><textarea id="l-msg" name="message" rows="4" required></textarea></div>
+        <button type="submit" class="btn btn--solid">Send</button>
+        <p class="form__ok" role="status" aria-live="polite"></p>
+        <p class="lightbox__alt">Or write to <a href="mailto:hello@tenfold.industries">hello@tenfold.industries</a></p>
+      </form>
+    </div>
+  </div>
+
+  <script src="js/main.js" defer></script>
+</body>
+</html>

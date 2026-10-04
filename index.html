@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Tenfold Industries — It starts with people.</title>
+  <meta name="description" content="Tenfold creates custom uniforms and branded apparel that turn brand stories into something tangible, wearable and made for real work. This is workwear, reimagined." />
+  <meta property="og:title" content="Tenfold Industries — It starts with people." />
+  <meta property="og:description" content="Tenfold creates custom uniforms and branded apparel that turn brand stories into something tangible, wearable and made for real work. This is workwear, reimagined." />
+  <meta property="og:image" content="assets/img/foldshadows-lg.jpg" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%232a2c2d'/%3E%3Cpath d='M8 9h16v3h-6.5v11h-3V12H8z' fill='%23f3eee5'/%3E%3C/svg%3E" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body data-page="home">
+
+  <!-- ===================== STICKY TOP NAVIGATION ===================== -->
+  <header class="nav" id="nav">
+    <a class="nav__brand" href="index.html" aria-label="Tenfold Industries — home">TENFOLD</a>
+    <nav class="nav__links" aria-label="Primary">
+      <a href="index.html" data-page="home" aria-current="page"><span>01</span>Home</a>
+      <a href="projects.html" data-page="projects"><span>02</span>Projects</a>
+      <a href="inspiration.html" data-page="inspiration"><span>03</span>Inspiration</a>
+      <a href="contact.html" data-page="contact"><span>04</span>Contact</a>
+    </nav>
+    <button class="nav__cta" type="button" data-open-lightbox>Contact us</button>
+    <button class="nav__burger" type="button" aria-label="Open menu" aria-expanded="false" data-menu-toggle>
+      <i></i><i></i>
+    </button>
+  </header>
+
+  <!-- Mobile menu -->
+  <div class="menu" id="menu" aria-hidden="true">
+    <a href="index.html" data-page="home"><span>01</span>Cinematic Entry</a>
+    <a href="projects.html" data-page="projects"><span>02</span>Spatial Case Studies</a>
+    <a href="inspiration.html" data-page="inspiration"><span>03</span>The Tactile Archive</a>
+    <a href="contact.html" data-page="contact"><span>04</span>Atelier Inquiry</a>
+    <button type="button" class="menu__cta" data-open-lightbox data-menu-close>Contact us</button>
+  </div>
+
+  <main id="top">
+
+    <!-- ===================== 01. CINEMATIC ENTRY / MASTHEAD ===================== -->
+    <section class="masthead" id="masthead" data-theme="dark" aria-label="Cinematic entry">
+      <div class="masthead__sticky">
+
+        <!-- Stage 2: full-bleed loop of tailored drapes & architectural silhouettes -->
+        <div class="loop" id="loop" aria-hidden="true">
+          <video class="loop__video" muted loop playsinline preload="none" poster="assets/img/foldshadows-lg.jpg">
+            <!-- Drop final footage here: assets/video/drape-loop.mp4 (H.264, 1920×1080, 15–25s, silent) -->
+            <source src="assets/video/drape-loop.mp4" type="video/mp4" />
+          </video>
+          <div class="loop__frames">
+            <img src="assets/img/foldshadows-lg.jpg" alt="" />
+            <img src="assets/img/material_thin-lg.jpg" alt="" />
+            <img src="assets/img/seethrough-lg.jpg" alt="" />
+            <img src="assets/img/curves-lg.jpg" alt="" />
+            <img src="assets/img/workspace-lg.jpg" alt="" />
+            <img src="assets/img/folds-lg.jpg" alt="" />
+          </div>
+          <div class="loop__veil"></div>
+        </div>
+
+        <!-- Stage 1: full-bleed photo collage -->
+        <div class="collage" id="collage">
+          <figure class="collage__tile t1"  style="--dx:-18vw; --dy:-10vh"><img src="assets/img/bartender-md.jpg"   alt="Bartender in a tailored shirt at a hotel bar" /></figure>
+          <figure class="collage__tile t2"  style="--dx:-6vw;  --dy:-22vh"><img src="assets/img/tropical-md.jpg"    alt="Terracotta façade with palm against the sky" /></figure>
+          <figure class="collage__tile t3"  style="--dx:6vw;   --dy:-20vh"><img src="assets/img/restaruants-md.jpg" alt="Server in a white shirt in a dining room" /></figure>
+          <figure class="collage__tile t4"  style="--dx:20vw;  --dy:-12vh"><img src="assets/img/hangers-md.jpg"     alt="White garments on a rail" /></figure>
+          <figure class="collage__tile t5"  style="--dx:-22vw; --dy:4vh"><img src="assets/img/folds-md.jpg"         alt="Knotted grey wool belt" /></figure>
+          <figure class="collage__tile t6"  style="--dx:-4vw;  --dy:6vh"><img src="assets/img/waiter1-md.jpg"       alt="Barista in a leather apron" /></figure>
+          <figure class="collage__tile t7"  style="--dx:4vw;   --dy:8vh"><img src="assets/img/curves-md.jpg"        alt="Curved architecture in warm light" /></figure>
+          <figure class="collage__tile t8"  style="--dx:22vw;  --dy:4vh"><img src="assets/img/workspace-md.jpg"     alt="Sunlit corridor of a hotel" /></figure>
+          <figure class="collage__tile t9"  style="--dx:-18vw; --dy:22vh"><img src="assets/img/blankcanvas-md.jpg"  alt="Dress form by a window" /></figure>
+          <figure class="collage__tile t10" style="--dx:-5vw;  --dy:24vh"><img src="assets/img/edges-md.jpg"        alt="Shadows on a plaster wall" /></figure>
+          <figure class="collage__tile t11" style="--dx:6vw;   --dy:26vh"><img src="assets/img/seethrough-md.jpg"   alt="Linen catching the light" /></figure>
+          <figure class="collage__tile t12" style="--dx:18vw;  --dy:22vh"><img src="assets/img/stacking-md.jpg"     alt="Stacked textiles in earth tones" /></figure>
+        </div>
+
+        <!-- Copy that surfaces during the transition -->
+        <div class="masthead__copy">
+          <p class="index">[ 01. Cinematic Entry ]</p>
+          <h1 class="masthead__title">It starts<br /><em>with people.</em></h1>
+          <p class="masthead__sub">A modern uniform design house, bridging high fashion and functional utility.</p>
+        </div>
+
+        <div class="masthead__cue" aria-hidden="true">
+          <span>Scroll</span><i></i>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== MANIFESTO (homepage text) ===================== -->
+    <section class="manifesto" id="manifesto" data-theme="light" aria-label="Manifesto">
+      <div class="wrap manifesto__grid">
+        <div class="manifesto__lead reveal">
+          <p class="eyebrow">Tenfold Industries</p>
+          <h2 class="display">A brand is not only seen in its spaces, products or identity. <em>It is carried by its people.</em></h2>
+        </div>
+        <div class="manifesto__body">
+          <p class="reveal">Tenfold creates custom uniforms and branded apparel that turn brand stories into something tangible, wearable and made for real work. From front-of-house uniforms and chef wear to team merchandise, every collection is developed with equal attention to creativity, functionality and craft.</p>
+          <p class="reveal">We consider how every piece fits, moves and performs and how the collection comes together as one distinct visual language.</p>
+          <p class="reveal">Because the best uniforms do not simply match. They create presence, strengthen belonging and make a brand instantly recognisable.</p>
+          <p class="manifesto__tag reveal">This is workwear, <em>reimagined.</em></p>
+        </div>
+        <figure class="manifesto__img reveal">
+          <img src="assets/img/waiter2-lg.jpg" alt="A cuff being fastened on a white shirt" loading="lazy" />
+          <figcaption>Fit, movement, performance.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+
+    <!-- ===================== EXPLORE — doorways to the other pages ===================== -->
+    <section class="explore" id="explore" data-theme="oat" aria-label="Explore">
+      <div class="wrap">
+        <p class="index reveal">Explore</p>
+        <div class="explore__grid">
+          <a class="card reveal" href="projects.html">
+            <figure><img src="assets/img/restaruants-md.jpg" alt="Server in a white shirt in a dining room" loading="lazy" /></figure>
+            <p class="eyebrow">02 — Spatial Case Studies</p>
+            <h3>Projects <em>→</em></h3>
+            <p>Editorial features on luxury hotel, fine dining and corporate spaces, and the six-stage bespoke pipeline.</p>
+          </a>
+          <a class="card reveal" href="inspiration.html">
+            <figure><img src="assets/img/material_denim-md.jpg" alt="Selvedge denim detail" loading="lazy" /></figure>
+            <p class="eyebrow">03 — The Tactile Archive</p>
+            <h3>Inspiration <em>→</em></h3>
+            <p>An asymmetrical lookbook of textile grains, weaves, seams and hardware, with macro-zoom modules.</p>
+          </a>
+          <a class="card reveal" href="contact.html">
+            <figure><img src="assets/img/measurements-md.jpg" alt="Pattern paper and measuring tools" loading="lazy" /></figure>
+            <p class="eyebrow">04 — Atelier Inquiry</p>
+            <h3>Contact <em>→</em></h3>
+            <p>Book a private consultation or request a material swatch kit.</p>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===================== STICKY FOOTER NAVIGATION (slim) ===================== -->
+  <footer class="footer footer--slim" data-theme="oat">
+    <div class="wrap footer__slim">
+      <a class="footer__brand" href="index.html">TENFOLD</a>
+      <nav class="footer__nav" aria-label="Footer"><a href="index.html">01 Home</a> <a href="projects.html">02 Projects</a> <a href="inspiration.html">03 Inspiration</a> <a href="contact.html">04 Contact</a></nav>
+      <a class="footer__mail" href="mailto:hello@tenfold.industries">hello@tenfold.industries</a>
+      <span class="footer__copy">© <span class="year"></span> Tenfold Industries</span>
+    </div>
+  </footer>
+
+  <!-- ===================== STICKY BOTTOM DOCK (secondary navigation) ===================== -->
+  <nav class="dock" id="dock" aria-label="Page index">
+    <a href="index.html" data-page="home"><b>01</b><span>Home</span></a>
+    <a href="projects.html" data-page="projects"><b>02</b><span>Projects</span></a>
+    <a href="inspiration.html" data-page="inspiration"><b>03</b><span>Inspiration</span></a>
+    <a href="contact.html" data-page="contact"><b>04</b><span>Contact</span></a>
+  </nav>
+
+  <!-- ===================== CONTACT LIGHTBOX ===================== -->
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-labelledby="lb-title" aria-hidden="true">
+    <div class="lightbox__backdrop" data-close-lightbox></div>
+    <div class="lightbox__panel">
+      <button type="button" class="lightbox__close" aria-label="Close" data-close-lightbox>×</button>
+      <figure class="lightbox__img"><img src="assets/img/blankcanvas-md.jpg" alt="" /></figure>
+      <form class="form" id="form-contact" novalidate>
+        <p class="eyebrow">Contact us</p>
+        <h3 id="lb-title">Tell us about <em>your people.</em></h3>
+        <div class="field"><label for="l-name">Name</label><input id="l-name" name="name" type="text" required /></div>
+        <div class="field"><label for="l-email">Email</label><input id="l-email" name="email" type="email" required /></div>
+        <div class="field"><label for="l-msg">Message</label><textarea id="l-msg" name="message" rows="4" required></textarea></div>
+        <button type="submit" class="btn btn--solid">Send</button>
+        <p class="form__ok" role="status" aria-live="polite"></p>
+        <p class="lightbox__alt">Or write to <a href="mailto:hello@tenfold.industries">hello@tenfold.industries</a></p>
+      </form>
+    </div>
+  </div>
+
+  <script src="js/main.js" defer></script>
+</body>
+</html>
