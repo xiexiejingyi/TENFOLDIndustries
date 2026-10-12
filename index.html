@@ -3,180 +3,182 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Tenfold Industries — It starts with people.</title>
-  <meta name="description" content="Tenfold creates custom uniforms and branded apparel that turn brand stories into something tangible, wearable and made for real work. This is workwear, reimagined." />
-  <meta property="og:title" content="Tenfold Industries — It starts with people." />
-  <meta property="og:description" content="Tenfold creates custom uniforms and branded apparel that turn brand stories into something tangible, wearable and made for real work. This is workwear, reimagined." />
-  <meta property="og:image" content="assets/img/foldshadows-lg.jpg" />
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%232a2c2d'/%3E%3Cpath d='M8 9h16v3h-6.5v11h-3V12H8z' fill='%23f3eee5'/%3E%3C/svg%3E" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
+  <title>TENFOLD — Welcome to the new era of uniforms</title>
+  <meta name="description" content="TENFOLD is a design house for uniforms. We bring together fashion, function and brand thinking to create what people wear at work." />
+  <meta property="og:title" content="TENFOLD — Welcome to the new era of uniforms" />
+  <meta property="og:description" content="TENFOLD is a design house for uniforms. We bring together fashion, function and brand thinking to create what people wear at work." />
+  <meta property="og:image" content="assets/img/hero-01.jpg" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23fff'/%3E%3Cpath d='M7 8h18v4h-7v12h-4V12H7z' fill='%23000'/%3E%3C/svg%3E" />
   <link rel="stylesheet" href="css/style.css" />
 </head>
 <body data-page="home">
 
-  <!-- ===================== STICKY TOP NAVIGATION ===================== -->
+  <!-- ===================== TOP MENU — fixed, stays in place on scroll ===================== -->
   <header class="nav" id="nav">
-    <a class="nav__brand" href="index.html" aria-label="Tenfold Industries — home">TENFOLD</a>
-    <nav class="nav__links" aria-label="Primary">
-      <a href="index.html" data-page="home" aria-current="page"><span>01</span>Home</a>
-      <a href="projects.html" data-page="projects"><span>02</span>Projects</a>
-      <a href="inspiration.html" data-page="inspiration"><span>03</span>Inspiration</a>
-      <a href="contact.html" data-page="contact"><span>04</span>Contact</a>
+    <a class="nav__logo" href="index.html" aria-label="Tenfold — home"><img src="assets/img/logo-black.png" alt="TENFOLD" width="1358" height="209" /></a>
+    <nav class="nav__group nav__group--left" aria-label="Primary">
+      <a href="about.html" data-page="about">About</a>
+      <a href="process.html" data-page="process">Process</a>
+      <a href="projects.html" data-page="projects">Projects</a>
     </nav>
-    <button class="nav__cta" type="button" data-open-lightbox>Contact us</button>
-    <button class="nav__burger" type="button" aria-label="Open menu" aria-expanded="false" data-menu-toggle>
-      <i></i><i></i>
-    </button>
+    <nav class="nav__group nav__group--right" aria-label="Secondary">
+      <a href="inspiration.html" data-page="inspiration">Inspiration</a>
+      <a href="faq.html" data-page="faq">FAQ</a>
+      <a href="contact.html" data-page="contact" data-open-contact>Contact</a>
+    </nav>
+    <button class="nav__burger" type="button" aria-label="Open menu" aria-expanded="false" data-menu-toggle><i></i><i></i></button>
   </header>
 
   <!-- Mobile menu -->
   <div class="menu" id="menu" aria-hidden="true">
-    <a href="index.html" data-page="home"><span>01</span>Cinematic Entry</a>
-    <a href="projects.html" data-page="projects"><span>02</span>Spatial Case Studies</a>
-    <a href="inspiration.html" data-page="inspiration"><span>03</span>The Tactile Archive</a>
-    <a href="contact.html" data-page="contact"><span>04</span>Atelier Inquiry</a>
-    <button type="button" class="menu__cta" data-open-lightbox data-menu-close>Contact us</button>
+    <a href="index.html" data-page="home" data-menu-close>Home</a>
+    <a href="about.html" data-page="about" data-menu-close>About</a>
+    <a href="process.html" data-page="process" data-menu-close>Process</a>
+    <a href="projects.html" data-page="projects" data-menu-close>Projects</a>
+    <a href="inspiration.html" data-page="inspiration" data-menu-close>Inspiration</a>
+    <a href="faq.html" data-page="faq" data-menu-close>FAQ</a>
+    <button type="button" data-open-contact>Contact</button>
   </div>
 
   <main id="top">
 
-    <!-- ===================== 01. CINEMATIC ENTRY / MASTHEAD ===================== -->
-    <section class="masthead" id="masthead" data-theme="dark" aria-label="Cinematic entry">
-      <div class="masthead__sticky">
-
-        <!-- Stage 2: full-bleed loop of tailored drapes & architectural silhouettes -->
-        <div class="loop" id="loop" aria-hidden="true">
-          <video class="loop__video" muted loop playsinline preload="none" poster="assets/img/foldshadows-lg.jpg">
-            <!-- Drop final footage here: assets/video/drape-loop.mp4 (H.264, 1920×1080, 15–25s, silent) -->
-            <source src="assets/video/drape-loop.mp4" type="video/mp4" />
-          </video>
-          <div class="loop__frames">
-            <img src="assets/img/foldshadows-lg.jpg" alt="" />
-            <img src="assets/img/material_thin-lg.jpg" alt="" />
-            <img src="assets/img/seethrough-lg.jpg" alt="" />
-            <img src="assets/img/curves-lg.jpg" alt="" />
-            <img src="assets/img/workspace-lg.jpg" alt="" />
-            <img src="assets/img/folds-lg.jpg" alt="" />
-          </div>
-          <div class="loop__veil"></div>
-        </div>
-
-        <!-- Stage 1: full-bleed photo collage -->
-        <div class="collage" id="collage">
-          <figure class="collage__tile t1"  style="--dx:-18vw; --dy:-10vh"><img src="assets/img/bartender-md.jpg"   alt="Bartender in a tailored shirt at a hotel bar" /></figure>
-          <figure class="collage__tile t2"  style="--dx:-6vw;  --dy:-22vh"><img src="assets/img/tropical-md.jpg"    alt="Terracotta façade with palm against the sky" /></figure>
-          <figure class="collage__tile t3"  style="--dx:6vw;   --dy:-20vh"><img src="assets/img/restaruants-md.jpg" alt="Server in a white shirt in a dining room" /></figure>
-          <figure class="collage__tile t4"  style="--dx:20vw;  --dy:-12vh"><img src="assets/img/hangers-md.jpg"     alt="White garments on a rail" /></figure>
-          <figure class="collage__tile t5"  style="--dx:-22vw; --dy:4vh"><img src="assets/img/folds-md.jpg"         alt="Knotted grey wool belt" /></figure>
-          <figure class="collage__tile t6"  style="--dx:-4vw;  --dy:6vh"><img src="assets/img/waiter1-md.jpg"       alt="Barista in a leather apron" /></figure>
-          <figure class="collage__tile t7"  style="--dx:4vw;   --dy:8vh"><img src="assets/img/curves-md.jpg"        alt="Curved architecture in warm light" /></figure>
-          <figure class="collage__tile t8"  style="--dx:22vw;  --dy:4vh"><img src="assets/img/workspace-md.jpg"     alt="Sunlit corridor of a hotel" /></figure>
-          <figure class="collage__tile t9"  style="--dx:-18vw; --dy:22vh"><img src="assets/img/blankcanvas-md.jpg"  alt="Dress form by a window" /></figure>
-          <figure class="collage__tile t10" style="--dx:-5vw;  --dy:24vh"><img src="assets/img/edges-md.jpg"        alt="Shadows on a plaster wall" /></figure>
-          <figure class="collage__tile t11" style="--dx:6vw;   --dy:26vh"><img src="assets/img/seethrough-md.jpg"   alt="Linen catching the light" /></figure>
-          <figure class="collage__tile t12" style="--dx:18vw;  --dy:22vh"><img src="assets/img/stacking-md.jpg"     alt="Stacked textiles in earth tones" /></figure>
-        </div>
-
-        <!-- Copy that surfaces during the transition -->
-        <div class="masthead__copy">
-          <p class="index">[ 01. Cinematic Entry ]</p>
-          <h1 class="masthead__title">It starts<br /><em>with people.</em></h1>
-          <p class="masthead__sub">A modern uniform design house, bridging high fashion and functional utility.</p>
-        </div>
-
-        <div class="masthead__cue" aria-hidden="true">
-          <span>Scroll</span><i></i>
-        </div>
+    <!-- ===================== HERO — copy bottom-left, photo/video right ===================== -->
+    <section class="hero" aria-label="Welcome">
+      <div class="hero__copy">
+        <h1 class="h-small">Welcome to the new era of uniforms</h1>
+        <p>TENFOLD is a design house for uniforms. We bring together fashion, function and brand thinking to create what people wear at work.</p>
+      </div>
+      <!-- A myriad of videos and photos: bartenders, hotel interiors, housekeeping by the pool, process, doormen.
+           Add a <video muted loop playsinline src="assets/video/..."> here and it joins the rotation. -->
+      <div class="hero__media" data-slideshow data-interval="4200">
+        <img class="is-active" src="assets/img/hero-01.jpg" alt="Two hotel team members in coral and powder-blue uniforms, seated against wood panelling" />
+        <img src="assets/img/hero-02.jpg" alt="A doorman opening the door of a hotel" loading="lazy" />
+        <img src="assets/img/hero-03.jpg" alt="A zoomed-out view of a housekeeper walking down the poolside" loading="lazy" />
+        <img src="assets/img/hero-04.jpg" alt="A weaver at a loom — the creative process" loading="lazy" />
+        <img src="assets/img/hero-05.jpg" alt="The interior of a hotel lobby" loading="lazy" />
       </div>
     </section>
 
-    <!-- ===================== MANIFESTO (homepage text) ===================== -->
-    <section class="manifesto" id="manifesto" data-theme="light" aria-label="Manifesto">
-      <div class="wrap manifesto__grid">
-        <div class="manifesto__lead reveal">
-          <p class="eyebrow">Tenfold Industries</p>
-          <h2 class="display">A brand is not only seen in its spaces, products or identity. <em>It is carried by its people.</em></h2>
-        </div>
-        <div class="manifesto__body">
-          <p class="reveal">Tenfold creates custom uniforms and branded apparel that turn brand stories into something tangible, wearable and made for real work. From front-of-house uniforms and chef wear to team merchandise, every collection is developed with equal attention to creativity, functionality and craft.</p>
-          <p class="reveal">We consider how every piece fits, moves and performs and how the collection comes together as one distinct visual language.</p>
-          <p class="reveal">Because the best uniforms do not simply match. They create presence, strengthen belonging and make a brand instantly recognisable.</p>
-          <p class="manifesto__tag reveal">This is workwear, <em>reimagined.</em></p>
-        </div>
-        <figure class="manifesto__img reveal">
-          <img src="assets/img/waiter2-lg.jpg" alt="A cuff being fastened on a white shirt" loading="lazy" />
-          <figcaption>Fit, movement, performance.</figcaption>
-        </figure>
+    <!-- ===================== PHONEBOOK GRID — images fill the page ===================== -->
+    <section class="grid" aria-label="Projects">
+      <a class="tile" href="projects.html"><img src="assets/img/grid-capella.jpg" alt="Poolside at a resort, palms against the sea" loading="lazy" /><span>Capella</span></a>
+      <a class="tile" href="projects.html"><img src="assets/img/grid-jiakkim.jpg" alt="Chefs plating at the pass" loading="lazy" /><span>Jiak Kim House</span></a>
+      <a class="tile" href="projects.html"><img src="assets/img/grid-aman.jpg" alt="A member of staff walking through a sunlit courtyard" loading="lazy" /><span>Aman</span></a>
+      <a class="tile" href="projects.html"><img src="assets/img/grid-rws.jpg" alt="Two team members in matching vests" loading="lazy" /><span>Resorts World Sentosa</span></a>
+      <a class="tile" href="projects.html"><img src="assets/img/blankcanvas-lg.jpg" alt="Dress form in the atelier" loading="lazy" /><span>NoMad</span></a>
+      <a class="tile" href="projects.html"><img src="assets/img/grid-mama.jpg" alt="Hands working a sheet of leather" loading="lazy" /><span>MAMA Shelter</span></a>
+    </section>
+
+    <!-- ===================== CLIENT LOGO CAROUSEL (moving) — swap text for logo files ===================== -->
+    <section class="clients" aria-label="Our clients">
+      <div class="clients__track">
+        <ul class="clients__list">
+          <li class="clients__item">Mandarin Oriental</li>
+          <li class="clients__item">Capella</li>
+          <li class="clients__item">Brewerkz</li>
+          <li class="clients__item">Grand Copthorne Waterfront</li>
+          <li class="clients__item">Bvlgari</li>
+          <li class="clients__item">Changi Airport Group</li>
+          <li class="clients__item">Parkroyal Collection</li>
+          <li class="clients__item">The Fullerton</li>
+          <li class="clients__item">Raffles</li>
+        </ul>
+        <ul class="clients__list" aria-hidden="true">
+          <li class="clients__item">Mandarin Oriental</li>
+          <li class="clients__item">Capella</li>
+          <li class="clients__item">Brewerkz</li>
+          <li class="clients__item">Grand Copthorne Waterfront</li>
+          <li class="clients__item">Bvlgari</li>
+          <li class="clients__item">Changi Airport Group</li>
+          <li class="clients__item">Parkroyal Collection</li>
+          <li class="clients__item">The Fullerton</li>
+          <li class="clients__item">Raffles</li>
+        </ul>
       </div>
     </section>
 
-
-    <!-- ===================== EXPLORE — doorways to the other pages ===================== -->
-    <section class="explore" id="explore" data-theme="oat" aria-label="Explore">
-      <div class="wrap">
-        <p class="index reveal">Explore</p>
-        <div class="explore__grid">
-          <a class="card reveal" href="projects.html">
-            <figure><img src="assets/img/restaruants-md.jpg" alt="Server in a white shirt in a dining room" loading="lazy" /></figure>
-            <p class="eyebrow">02 — Spatial Case Studies</p>
-            <h3>Projects <em>→</em></h3>
-            <p>Editorial features on luxury hotel, fine dining and corporate spaces, and the six-stage bespoke pipeline.</p>
-          </a>
-          <a class="card reveal" href="inspiration.html">
-            <figure><img src="assets/img/material_denim-md.jpg" alt="Selvedge denim detail" loading="lazy" /></figure>
-            <p class="eyebrow">03 — The Tactile Archive</p>
-            <h3>Inspiration <em>→</em></h3>
-            <p>An asymmetrical lookbook of textile grains, weaves, seams and hardware, with macro-zoom modules.</p>
-          </a>
-          <a class="card reveal" href="contact.html">
-            <figure><img src="assets/img/measurements-md.jpg" alt="Pattern paper and measuring tools" loading="lazy" /></figure>
-            <p class="eyebrow">04 — Atelier Inquiry</p>
-            <h3>Contact <em>→</em></h3>
-            <p>Book a private consultation or request a material swatch kit.</p>
-          </a>
+    <!-- ===================== WHAT INSPIRES US — carousel ===================== -->
+    <section class="inspire" aria-labelledby="inspire-title" data-carousel>
+      <div class="inspire__head">
+        <h2 class="h-big" id="inspire-title">What inspires us</h2>
+        <div class="inspire__arrows">
+          <button type="button" aria-label="Previous" data-prev>&lsaquo;</button>
+          <button type="button" aria-label="Next" data-next>&rsaquo;</button>
         </div>
       </div>
+      <div class="carousel">
+          <article class="card is-short"><figure><img src="assets/img/insp-01.jpg" alt="Lounge — Oak &amp; linen" loading="lazy" /></figure><p class="card__cap"><span>Lounge — Oak &amp; linen</span><span>Hotel interior reference</span><span>London</span></p></article>
+          <article class="card"><figure><img src="assets/img/insp-03.jpg" alt="Apartment — Lacquer" loading="lazy" /></figure><p class="card__cap"><span>Apartment — Lacquer</span><span>Interior reference</span><span>Paris</span></p></article>
+          <article class="card"><figure><img src="assets/img/insp-04.jpg" alt="Arva — Aman Tokyo" loading="lazy" /></figure><p class="card__cap"><span>Arva — Aman Tokyo</span><span>Dining room, morning service</span><span>Tokyo</span></p></article>
+          <article class="card is-short"><figure><img src="assets/img/insp-02.jpg" alt="Living room — Walnut" loading="lazy" /></figure><p class="card__cap"><span>Living room — Walnut</span><span>Interior reference</span><span>New York</span></p></article>
+          <article class="card"><figure><img src="assets/img/insp-06.jpg" alt="Aman New York" loading="lazy" /></figure><p class="card__cap"><span>Aman New York</span><span>Reception and lobby</span><span>New York</span></p></article>
+          <article class="card is-tall"><figure><img src="assets/img/insp-05.jpg" alt="MIDA — Late night" loading="lazy" /></figure><p class="card__cap"><span>MIDA — Late night</span><span>Service at the pass</span><span>Tokyo</span></p></article>
+          <article class="card"><figure><img src="assets/img/insp-08.jpg" alt="Cloth study" loading="lazy" /></figure><p class="card__cap"><span>Cloth study</span><span>Weight and drape</span><span>Atelier</span></p></article>
+          <article class="card is-tall"><figure><img src="assets/img/insp-07.jpg" alt="New Nordic kitchen" loading="lazy" /></figure><p class="card__cap"><span>New Nordic kitchen</span><span>Whites under steam</span><span>Copenhagen</span></p></article>
+          <article class="card is-short"><figure><img src="assets/img/curves-md.jpg" alt="Terracotta — Light" loading="lazy" /></figure><p class="card__cap"><span>Terracotta — Light</span><span>Architecture reference</span><span>Marrakech</span></p></article>
+          <article class="card"><figure><img src="assets/img/fabricsfrombuildings-md.jpg" alt="Fabric from buildings" loading="lazy" /></figure><p class="card__cap"><span>Fabric from buildings</span><span>Texture study</span><span>Atelier</span></p></article>
+      </div>
     </section>
+
   </main>
 
-  <!-- ===================== STICKY FOOTER NAVIGATION (slim) ===================== -->
-  <footer class="footer footer--slim" data-theme="oat">
-    <div class="wrap footer__slim">
-      <a class="footer__brand" href="index.html">TENFOLD</a>
-      <nav class="footer__nav" aria-label="Footer"><a href="index.html">01 Home</a> <a href="projects.html">02 Projects</a> <a href="inspiration.html">03 Inspiration</a> <a href="contact.html">04 Contact</a></nav>
-      <a class="footer__mail" href="mailto:hello@tenfold.industries">hello@tenfold.industries</a>
-      <span class="footer__copy">© <span class="year"></span> Tenfold Industries</span>
+  <!-- ===================== WORDMARK + FOOTER ===================== -->
+  <footer class="footer">
+    <a class="wordmark" href="index.html" aria-label="Tenfold — home"><img src="assets/img/logo-black.png" alt="TENFOLD" width="1358" height="209" loading="lazy" /></a>
+    <div class="footer__row">
+      <div><a href="contact.html" data-open-contact>Contact</a><small>&copy; TENFOLD <span class="year"></span></small></div>
+      <div><a href="faq.html">FAQ</a></div>
+      <div><a href="about.html">About</a></div>
+      <div><a href="#">Privacy Policy</a></div>
+      <div><a href="https://www.instagram.com/" target="_blank" rel="noopener">Instagram</a></div>
     </div>
   </footer>
 
-  <!-- ===================== STICKY BOTTOM DOCK (secondary navigation) ===================== -->
-  <nav class="dock" id="dock" aria-label="Page index">
-    <a href="index.html" data-page="home"><b>01</b><span>Home</span></a>
-    <a href="projects.html" data-page="projects"><b>02</b><span>Projects</span></a>
-    <a href="inspiration.html" data-page="inspiration"><b>03</b><span>Inspiration</span></a>
-    <a href="contact.html" data-page="contact"><b>04</b><span>Contact</span></a>
-  </nav>
-
-  <!-- ===================== CONTACT LIGHTBOX ===================== -->
-  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-labelledby="lb-title" aria-hidden="true">
-    <div class="lightbox__backdrop" data-close-lightbox></div>
-    <div class="lightbox__panel">
-      <button type="button" class="lightbox__close" aria-label="Close" data-close-lightbox>×</button>
-      <figure class="lightbox__img"><img src="assets/img/blankcanvas-md.jpg" alt="" /></figure>
-      <form class="form" id="form-contact" novalidate>
-        <p class="eyebrow">Contact us</p>
-        <h3 id="lb-title">Tell us about <em>your people.</em></h3>
-        <div class="field"><label for="l-name">Name</label><input id="l-name" name="name" type="text" required /></div>
-        <div class="field"><label for="l-email">Email</label><input id="l-email" name="email" type="email" required /></div>
-        <div class="field"><label for="l-msg">Message</label><textarea id="l-msg" name="message" rows="4" required></textarea></div>
-        <button type="submit" class="btn btn--solid">Send</button>
-        <p class="form__ok" role="status" aria-live="polite"></p>
-        <p class="lightbox__alt">Or write to <a href="mailto:hello@tenfold.industries">hello@tenfold.industries</a></p>
-      </form>
+  <!-- ===================== CONTACT — pops out over the page ===================== -->
+  <div class="veil" data-close-contact></div>
+  <aside class="panel" id="contact-panel" role="dialog" aria-modal="true" aria-label="Contact us" aria-hidden="true">
+    <div class="panel__head">
+      <span>Contact us</span>
+      <button type="button" class="panel__close" data-close-contact>Close</button>
     </div>
-  </div>
+    <form class="form" id="form-contact" novalidate>
+        <div class="form__row">
+          <div class="field"><label class="sr-only" for="c-first">First name</label><input id="c-first" name="first_name" type="text" placeholder="First name *" autocomplete="given-name" required /></div>
+          <div class="field"><label class="sr-only" for="c-last">Last name</label><input id="c-last" name="last_name" type="text" placeholder="Last name *" autocomplete="family-name" required /></div>
+        </div>
+        <div class="form__row">
+          <div class="field"><label class="sr-only" for="c-email">Email</label><input id="c-email" name="email" type="email" placeholder="Email *" autocomplete="email" required /></div>
+          <div class="field"><label class="sr-only" for="c-phone">Phone</label><input id="c-phone" name="phone" type="tel" placeholder="Phone" autocomplete="tel" /></div>
+        </div>
+        <div class="form__row form__row--1">
+          <div class="field"><label class="sr-only" for="c-subject">Choose subject</label>
+            <select id="c-subject" name="subject">
+              <option value="">Choose subject</option>
+              <option>New uniform project</option>
+              <option>Reorder or alterations</option>
+              <option>Press &amp; collaborations</option>
+              <option>General enquiry</option>
+            </select>
+          </div>
+        </div>
+        <div class="form__row form__row--1">
+          <div class="field"><label class="sr-only" for="c-msg">Message</label><textarea id="c-msg" name="message" rows="1" placeholder="Message *" required></textarea></div>
+        </div>
+        <button type="submit" class="btn-send">Send</button>
+        <p class="form__note">* Required fields</p>
+        <p class="form__ok" role="status" aria-live="polite"></p>
+      </form>
+    <dl class="panel__details">
+        <dt>Tel</dt>
+        <dd><a href="tel:+6569100263">+65 6910 0263</a><br />From Monday to Friday from 9 am to 6 pm SGT, excluding holidays.</dd>
+        <dt>WhatsApp</dt>
+        <dd><a href="https://wa.me/6569100263" target="_blank" rel="noopener">+65 6910 0263</a></dd>
+        <dt>Email</dt>
+        <dd><a href="mailto:industries.tenfold@gmail.com">industries.tenfold@gmail.com</a></dd>
+        <dt>Atelier</dt>
+        <dd>16 Shaw Road, #02-10<br />Singapore 367954<br />By appointment only.</dd>
+      </dl>
+  </aside>
 
   <script src="js/main.js" defer></script>
 </body>

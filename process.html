@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Process — TENFOLD</title>
+  <meta name="description" content="From ice breaker to beyond delivery: the six stages of a Tenfold uniform project." />
+  <meta property="og:title" content="Process — TENFOLD" />
+  <meta property="og:description" content="From ice breaker to beyond delivery: the six stages of a Tenfold uniform project." />
+  <meta property="og:image" content="assets/img/process-01.jpg" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23fff'/%3E%3Cpath d='M7 8h18v4h-7v12h-4V12H7z' fill='%23000'/%3E%3C/svg%3E" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body data-page="process">
+
+  <!-- ===================== TOP MENU — fixed, stays in place on scroll ===================== -->
+  <header class="nav" id="nav">
+    <a class="nav__logo" href="index.html" aria-label="Tenfold — home"><img src="assets/img/logo-black.png" alt="TENFOLD" width="1358" height="209" /></a>
+    <nav class="nav__group nav__group--left" aria-label="Primary">
+      <a href="about.html" data-page="about">About</a>
+      <a href="process.html" data-page="process" aria-current="page">Process</a>
+      <a href="projects.html" data-page="projects">Projects</a>
+    </nav>
+    <nav class="nav__group nav__group--right" aria-label="Secondary">
+      <a href="inspiration.html" data-page="inspiration">Inspiration</a>
+      <a href="faq.html" data-page="faq">FAQ</a>
+      <a href="contact.html" data-page="contact" data-open-contact>Contact</a>
+    </nav>
+    <button class="nav__burger" type="button" aria-label="Open menu" aria-expanded="false" data-menu-toggle><i></i><i></i></button>
+  </header>
+
+  <!-- Mobile menu -->
+  <div class="menu" id="menu" aria-hidden="true">
+    <a href="index.html" data-page="home" data-menu-close>Home</a>
+    <a href="about.html" data-page="about" data-menu-close>About</a>
+    <a href="process.html" data-page="process" data-menu-close>Process</a>
+    <a href="projects.html" data-page="projects" data-menu-close>Projects</a>
+    <a href="inspiration.html" data-page="inspiration" data-menu-close>Inspiration</a>
+    <a href="faq.html" data-page="faq" data-menu-close>FAQ</a>
+    <button type="button" data-open-contact>Contact</button>
+  </div>
+
+  <main id="top">
+
+    <!-- ===================== PROCESS — images left, timeline right ===================== -->
+    <section class="process" aria-label="Our process">
+      <div class="process__media">
+        <figure><img src="assets/img/process-01.jpg" alt="A hotel attendant in a yellow uniform carrying a tray through a guest room" /></figure>
+        <figure><img src="assets/img/process-02.jpg" alt="A doorman&rsquo;s white gloves held behind the back" loading="lazy" /></figure>
+      </div>
+      <ol class="steps">
+        <li class="step"><h3>01 Ice breaker</h3><p>Every project starts with a conversation.</p><p>We get to know your brand, your people and the world you&rsquo;re trying to create. Bring us a moodboard, a brand book, a reference image or simply an idea.</p><p>We&rsquo;ll unpack the creative direction, operational needs, budget and timeline together.</p></li>
+        <li class="step"><h3>02 Creative direction</h3><p>We translate your brand into a distinctive uniform collection.</p><p>From silhouettes and colours to fabrics and functional details, every element is considered to create branded workwear that looks and feels unmistakably yours.</p></li>
+        <li class="step"><h3>03 Prototyping</h3><p>Good design deserves to be tested in the real world.</p><p>We develop prototypes to study proportion, fit, movement and functionality. Every detail, from fabric weight to pocket placement, buttons and trims, is considered and refined before production begins.</p></li>
+        <li class="step"><h3>04 Production</h3><p>Once every detail feels right, we bring the collection to life.</p><p>Our production team works closely with our designers to ensure the original creative intent carries through, from the first piece to the last.</p></li>
+        <li class="step"><h3>05 Rollout</h3><p>From fitting to final delivery, we coordinate every detail of the rollout to ensure a seamless transition from production to your team.</p><p>Alterations and fit adjustments can be arranged where needed.</p></li>
+        <li class="step"><h3>06 Beyond delivery</h3><p>Uniforms live, evolve and grow with a brand.</p><p>We stay close after launch, supporting reorders, adjustments, new roles and future developments as your business evolves.</p><p>Think of us as your long-term uniform design partner.</p></li>
+      </ol>
+    </section>
+
+  </main>
+
+  <!-- ===================== WORDMARK + FOOTER ===================== -->
+  <footer class="footer footer--page">
+    <a class="wordmark" href="index.html" aria-label="Tenfold — home"><img src="assets/img/logo-black.png" alt="TENFOLD" width="1358" height="209" loading="lazy" /></a>
+    <div class="footer__row">
+      <div><a href="contact.html" data-open-contact>Contact</a><small>&copy; TENFOLD <span class="year"></span></small></div>
+      <div><a href="faq.html">FAQ</a></div>
+      <div><a href="about.html">About</a></div>
+      <div><a href="#">Privacy Policy</a></div>
+      <div><a href="https://www.instagram.com/" target="_blank" rel="noopener">Instagram</a></div>
+    </div>
+  </footer>
+
+  <!-- ===================== CONTACT — pops out over the page ===================== -->
+  <div class="veil" data-close-contact></div>
+  <aside class="panel" id="contact-panel" role="dialog" aria-modal="true" aria-label="Contact us" aria-hidden="true">
+    <div class="panel__head">
+      <span>Contact us</span>
+      <button type="button" class="panel__close" data-close-contact>Close</button>
+    </div>
+    <form class="form" id="form-contact" novalidate>
+        <div class="form__row">
+          <div class="field"><label class="sr-only" for="c-first">First name</label><input id="c-first" name="first_name" type="text" placeholder="First name *" autocomplete="given-name" required /></div>
+          <div class="field"><label class="sr-only" for="c-last">Last name</label><input id="c-last" name="last_name" type="text" placeholder="Last name *" autocomplete="family-name" required /></div>
+        </div>
+        <div class="form__row">
+          <div class="field"><label class="sr-only" for="c-email">Email</label><input id="c-email" name="email" type="email" placeholder="Email *" autocomplete="email" required /></div>
+          <div class="field"><label class="sr-only" for="c-phone">Phone</label><input id="c-phone" name="phone" type="tel" placeholder="Phone" autocomplete="tel" /></div>
+        </div>
+        <div class="form__row form__row--1">
+          <div class="field"><label class="sr-only" for="c-subject">Choose subject</label>
+            <select id="c-subject" name="subject">
+              <option value="">Choose subject</option>
+              <option>New uniform project</option>
+              <option>Reorder or alterations</option>
+              <option>Press &amp; collaborations</option>
+              <option>General enquiry</option>
+            </select>
+          </div>
+        </div>
+        <div class="form__row form__row--1">
+          <div class="field"><label class="sr-only" for="c-msg">Message</label><textarea id="c-msg" name="message" rows="1" placeholder="Message *" required></textarea></div>
+        </div>
+        <button type="submit" class="btn-send">Send</button>
+        <p class="form__note">* Required fields</p>
+        <p class="form__ok" role="status" aria-live="polite"></p>
+      </form>
+    <dl class="panel__details">
+        <dt>Tel</dt>
+        <dd><a href="tel:+6569100263">+65 6910 0263</a><br />From Monday to Friday from 9 am to 6 pm SGT, excluding holidays.</dd>
+        <dt>WhatsApp</dt>
+        <dd><a href="https://wa.me/6569100263" target="_blank" rel="noopener">+65 6910 0263</a></dd>
+        <dt>Email</dt>
+        <dd><a href="mailto:industries.tenfold@gmail.com">industries.tenfold@gmail.com</a></dd>
+        <dt>Atelier</dt>
+        <dd>16 Shaw Road, #02-10<br />Singapore 367954<br />By appointment only.</dd>
+      </dl>
+  </aside>
+
+  <script src="js/main.js" defer></script>
+</body>
+</html>

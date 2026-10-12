@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>FAQ — TENFOLD</title>
+  <meta name="description" content="Frequently asked questions about working with Tenfold." />
+  <meta property="og:title" content="FAQ — TENFOLD" />
+  <meta property="og:description" content="Frequently asked questions about working with Tenfold." />
+  <meta property="og:image" content="assets/img/hero-01.jpg" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23fff'/%3E%3Cpath d='M7 8h18v4h-7v12h-4V12H7z' fill='%23000'/%3E%3C/svg%3E" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body data-page="faq">
+
+  <!-- ===================== TOP MENU — fixed, stays in place on scroll ===================== -->
+  <header class="nav" id="nav">
+    <a class="nav__logo" href="index.html" aria-label="Tenfold — home"><img src="assets/img/logo-black.png" alt="TENFOLD" width="1358" height="209" /></a>
+    <nav class="nav__group nav__group--left" aria-label="Primary">
+      <a href="about.html" data-page="about">About</a>
+      <a href="process.html" data-page="process">Process</a>
+      <a href="projects.html" data-page="projects">Projects</a>
+    </nav>
+    <nav class="nav__group nav__group--right" aria-label="Secondary">
+      <a href="inspiration.html" data-page="inspiration">Inspiration</a>
+      <a href="faq.html" data-page="faq" aria-current="page">FAQ</a>
+      <a href="contact.html" data-page="contact" data-open-contact>Contact</a>
+    </nav>
+    <button class="nav__burger" type="button" aria-label="Open menu" aria-expanded="false" data-menu-toggle><i></i><i></i></button>
+  </header>
+
+  <!-- Mobile menu -->
+  <div class="menu" id="menu" aria-hidden="true">
+    <a href="index.html" data-page="home" data-menu-close>Home</a>
+    <a href="about.html" data-page="about" data-menu-close>About</a>
+    <a href="process.html" data-page="process" data-menu-close>Process</a>
+    <a href="projects.html" data-page="projects" data-menu-close>Projects</a>
+    <a href="inspiration.html" data-page="inspiration" data-menu-close>Inspiration</a>
+    <a href="faq.html" data-page="faq" data-menu-close>FAQ</a>
+    <button type="button" data-open-contact>Contact</button>
+  </div>
+
+  <main id="top">
+
+    <section class="faq" aria-labelledby="faq-title">
+      <h1 class="h-big" id="faq-title">FAQ</h1>
+      <div>
+          <details><summary>Who do you design for?</summary><p>Hotels, resorts, restaurants, bars, members&rsquo; clubs and corporate teams. If your people wear something to work, we can design it.</p></details>
+          <details><summary>Is there a minimum order?</summary><p>Projects typically start from 30 pieces per style. Smaller runs can be arranged for prototypes, launches and senior roles.</p></details>
+          <details><summary>How long does a project take?</summary><p>From first conversation to rollout, most collections take 12 to 20 weeks depending on scope, fabric sourcing and sampling rounds.</p></details>
+          <details><summary>Can you work with our existing uniforms?</summary><p>Yes. We can refine, re-cut or extend an existing wardrobe, or build a new collection around pieces you want to keep.</p></details>
+          <details><summary>What happens after delivery?</summary><p>We stay close. Reorders, alterations, new roles and seasonal additions are all part of the partnership.</p></details>
+          <details><summary>Where are you based?</summary><p>Our atelier is at 16 Shaw Road, #02-10, Singapore 367954. Visits are by appointment only.</p></details>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===================== WORDMARK + FOOTER ===================== -->
+  <footer class="footer footer--page">
+    <a class="wordmark" href="index.html" aria-label="Tenfold — home"><img src="assets/img/logo-black.png" alt="TENFOLD" width="1358" height="209" loading="lazy" /></a>
+    <div class="footer__row">
+      <div><a href="contact.html" data-open-contact>Contact</a><small>&copy; TENFOLD <span class="year"></span></small></div>
+      <div><a href="faq.html">FAQ</a></div>
+      <div><a href="about.html">About</a></div>
+      <div><a href="#">Privacy Policy</a></div>
+      <div><a href="https://www.instagram.com/" target="_blank" rel="noopener">Instagram</a></div>
+    </div>
+  </footer>
+
+  <!-- ===================== CONTACT — pops out over the page ===================== -->
+  <div class="veil" data-close-contact></div>
+  <aside class="panel" id="contact-panel" role="dialog" aria-modal="true" aria-label="Contact us" aria-hidden="true">
+    <div class="panel__head">
+      <span>Contact us</span>
+      <button type="button" class="panel__close" data-close-contact>Close</button>
+    </div>
+    <form class="form" id="form-contact" novalidate>
+        <div class="form__row">
+          <div class="field"><label class="sr-only" for="c-first">First name</label><input id="c-first" name="first_name" type="text" placeholder="First name *" autocomplete="given-name" required /></div>
+          <div class="field"><label class="sr-only" for="c-last">Last name</label><input id="c-last" name="last_name" type="text" placeholder="Last name *" autocomplete="family-name" required /></div>
+        </div>
+        <div class="form__row">
+          <div class="field"><label class="sr-only" for="c-email">Email</label><input id="c-email" name="email" type="email" placeholder="Email *" autocomplete="email" required /></div>
+          <div class="field"><label class="sr-only" for="c-phone">Phone</label><input id="c-phone" name="phone" type="tel" placeholder="Phone" autocomplete="tel" /></div>
+        </div>
+        <div class="form__row form__row--1">
+          <div class="field"><label class="sr-only" for="c-subject">Choose subject</label>
+            <select id="c-subject" name="subject">
+              <option value="">Choose subject</option>
+              <option>New uniform project</option>
+              <option>Reorder or alterations</option>
+              <option>Press &amp; collaborations</option>
+              <option>General enquiry</option>
+            </select>
+          </div>
+        </div>
+        <div class="form__row form__row--1">
+          <div class="field"><label class="sr-only" for="c-msg">Message</label><textarea id="c-msg" name="message" rows="1" placeholder="Message *" required></textarea></div>
+        </div>
+        <button type="submit" class="btn-send">Send</button>
+        <p class="form__note">* Required fields</p>
+        <p class="form__ok" role="status" aria-live="polite"></p>
+      </form>
+    <dl class="panel__details">
+        <dt>Tel</dt>
+        <dd><a href="tel:+6569100263">+65 6910 0263</a><br />From Monday to Friday from 9 am to 6 pm SGT, excluding holidays.</dd>
+        <dt>WhatsApp</dt>
+        <dd><a href="https://wa.me/6569100263" target="_blank" rel="noopener">+65 6910 0263</a></dd>
+        <dt>Email</dt>
+        <dd><a href="mailto:industries.tenfold@gmail.com">industries.tenfold@gmail.com</a></dd>
+        <dt>Atelier</dt>
+        <dd>16 Shaw Road, #02-10<br />Singapore 367954<br />By appointment only.</dd>
+      </dl>
+  </aside>
+
+  <script src="js/main.js" defer></script>
+</body>
+</html>
